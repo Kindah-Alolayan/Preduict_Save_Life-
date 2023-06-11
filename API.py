@@ -4,7 +4,7 @@ from flask import request
 import Models as dbHandler
 import tensorflow as tf
 from tensorflow import keras
-from tensorflow.keras.models import load_model
+from keras.models import load_model
 import numpy as np
 import os
 import cv2 as cv2
