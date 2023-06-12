@@ -1,8 +1,8 @@
 <html>
 
 <head>
-    <title>leukemia early prediction</title>
-    <link rel ="stylesheet" href = "style.css">
+    <title>AUL Diagnosir</title>
+    <link rel ="stylesheet" href = "../static/style.css">
 </head>
 
 <body>
@@ -11,24 +11,28 @@
         <div class="nav1">
             <div class="navbar">
               <img
-                src="./imagesw/donate-blood-save-life-isolated-icon-transfusion-medical-aid-charity-donation-vector-campaign-hand-palm-drop-emergency-154489993-removebg-preview (1).png"
+                src="../static/imagesw/donate-blood-save-life-isolated-icon-transfusion-medical-aid-charity-donation-vector-campaign-hand-palm-drop-emergency-154489993-removebg-preview%20(1).png"
                 class="logo"
               />
-                 <ul>
-            <li><a href="index.html"> Home</a></li>
-            <li><a href="About.html"> About</a></li>
-            <li><a href="Predict.html">Predict</a></li>
-            <li><a href="AboutUs.html"> AboutUs</a></li>
-            <li><a href="signin.html">Sign In</a></li>
-            <li><a href="signup.html">Sign Up</a></li>
-          </ul>
+
             </div>
     <div class="formcontainer">
         <div class="app-wrapper">
             <div>
                 <h2>Sign Up</h2>
             </div>
-            <form  class="form-wrapper">
+            <form  class="form-wrapper" action = "/signup.html" method = "post" enctype="multipart/form-data">
+                	<div class="form-field">
+                    <label>ID</label>
+                    <br></br>
+                    <input
+                        class="input"
+                        type="text"
+                        name="id"
+                        id="id"
+                        value=""
+                    />
+                </div>
                 <div class="form-field">
                     <label>Name</label>
                     <br></br>
@@ -37,18 +41,10 @@
                         type="text" 
                         name="name" 
                         value=""
+                        id="name"
                     />
                 </div>
-				<div class="form-field">
-                    <label>ID</label>
-                    <br></br>
-                    <input 
-                        class="input" 
-                        type="text" 
-                        name="id" 
-                        value=""
-                    />
-                </div>
+
                 <div class="form-field">
                     <label>Email</label>
                     <br></br>
@@ -57,6 +53,7 @@
                         type="email" 
                         name="email" 
                         value=""
+                        id="email"
                     />
                 </div>
                 <div class="form-field">
@@ -67,6 +64,7 @@
                         type="password" 
                         name="password" 
                         value=""
+                        id="password"
                     />
                 </div>
                 <div class="form-field">
@@ -75,15 +73,17 @@
                     <input 
                         class="input" 
                         type="password" 
-                        name="password-re-enter" 
+                        name="password_re_enter"
                         value=""
+                        id="password_re_enter"
                     />
                 </div>
                 <div>
-                    <button class="submit" onClick="">Sign In</button>
+                    <button class="submit" onClick="">Sign Up</button>
+                    <p>{{ ou }}</p>
                 </div>
             </form>
-            <p class="bottom-text">Already have an account? Sign in <a href='./signin.html'> here! 
+            <p class="bottom-text">Already have an account? Sign in <a href='signin.html'> here!
                
             </a>
             </p>
